@@ -1,5 +1,6 @@
-import SplashScreen from "./SplashScreen";
+import SplashScreen from './SplashScreen';
+export * from './validation';
+export * from './admin';
+export * from './client';
 
-export {
-    SplashScreen,
-}
+export {SplashScreen};

@@ -1,20 +1,4 @@
-import React from 'react';
 import { createStore } from 'redux';
-import { StatusBar } from 'react-native';
-import { Provider } from 'react-redux';
-import Navigations from '~navigation';
-
-const App = () => {
-  return (
-    <Provider store={reduxStore}>
-      <StatusBar backgroundColor="black" barStyle="light-content" /> 
-      <Navigations />
-    </Provider>
-  );
-};
-
-export default App;
-
 
 // true = light
 // false = dark
@@ -41,3 +25,5 @@ const rootReducer = (state = initialState, action) => {
 
 const reduxStore = createStore(rootReducer);
 console.log(reduxStore.getState())
+
+export {reduxStore}
